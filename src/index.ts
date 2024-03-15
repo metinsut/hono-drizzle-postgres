@@ -4,7 +4,7 @@ import { cors } from 'hono/cors';
 import { logger } from 'hono/logger';
 import { api } from './routes/api';
 import { Env } from './types';
-import './db';
+import '../db';
 
 const app = new Hono<{ Bindings: Env }>();
 

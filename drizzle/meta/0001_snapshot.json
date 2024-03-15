@@ -1,6 +1,6 @@
 {
-  "id": "6826e992-1518-4b33-8ddd-a2292747854f",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "999511b6-722e-4772-8007-d33ca696fce4",
+  "prevId": "6826e992-1518-4b33-8ddd-a2292747854f",
   "version": "5",
   "dialect": "pg",
   "tables": {
@@ -47,6 +47,28 @@
         "updated_at": {
           "name": "updated_at",
           "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "test": {
+      "name": "test",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
           "primaryKey": false,
           "notNull": false
         }

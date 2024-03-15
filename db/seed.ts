@@ -15,7 +15,7 @@ export function createRandomUser() {
 }
 
 export const USERS = faker.helpers.multiple(createRandomUser, {
-  count: 55,
+  count: 3,
 });
 
 await db.insert(users).values(USERS);
